@@ -1,0 +1,10 @@
+opam-version: "1"
+maintainer: "contact@ocamlpro.com"
+build: [
+  ["%{make}%"]
+  ["%{make}%" "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "core"]
+]
+depends: ["ocamlfind" "bin_prot" {= "108.08.00-pre0"} "fieldslib" {= "108.08.00-pre0"} "pa_ounit" {= "108.08.00-pre0"} "pipebang" {= "108.08.00-pre0"} "sexplib" {= "108.08.00-pre0"} "variantslib" {= "108.08.00-pre0"} "res" "ounit" "comparelib" {= "108.08.00-pre0"}]
